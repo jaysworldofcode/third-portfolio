@@ -1,0 +1,167 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/* `dark:` follows the site's own theme attribute instead of the OS setting, so the toggle controls it. */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+/*
+ * Theme palette. The active theme is set as `data-theme` on <html> by the inline script in
+ * the root layout, before first paint. The accent colours are injected from `theme` in
+ * content/site.json as inline styles on <html>, so these are only fallbacks.
+ */
+:root,
+[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0a0a0a;
+  --surface: #131313;
+  --surface-raised: #1c1c1c;
+  --fg: #f2f1ec;
+  --muted: #8f8e88;
+  --line: rgb(242 241 236 / 0.12);
+  --accent: #c6f432;
+  --on-accent: #0a0a0a;
+  /* Accent used as text or thin lines; lime reads well on black as is. */
+  --accent-text: var(--accent);
+  /* Form error text; a light red keeps contrast on black. */
+  --danger: #ff7a7a;
+}
+
+[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f4f3ee;
+  --surface: #eae9e3;
+  --surface-raised: #ffffff;
+  --fg: #0d0d0d;
+  --muted: #5f5e59;
+  --line: rgb(13 13 13 / 0.12);
+  /* Lime text on off-white fails contrast, so accent text is darkened toward the foreground. */
+  --accent-text: color-mix(in oklab, var(--accent) 40%, var(--fg));
+  --danger: #b42318;
+}
+
+@theme inline {
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-heading: var(--font-syne), var(--font-inter), sans-serif;
+
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-raised: var(--surface-raised);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-on-accent: var(--on-accent);
+  --color-accent-text: var(--accent-text);
+  --color-danger: var(--danger);
+}
+
+@theme {
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+
+  --animate-fade-in: fade-in 0.5s ease both;
+  --animate-scroll-line: scroll-line 2.2s ease-in-out infinite;
+  /* Duration is read from --marquee-duration so each band can set its own speed. */
+  --animate-marquee: marquee var(--marquee-duration, 40s) linear infinite;
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes scroll-line {
+    0% {
+      transform: scaleY(0);
+      transform-origin: top;
+    }
+    45% {
+      transform: scaleY(1);
+      transform-origin: top;
+    }
+    55% {
+      transform: scaleY(1);
+      transform-origin: bottom;
+    }
+    100% {
+      transform: scaleY(0);
+      transform-origin: bottom;
+    }
+  }
+
+  /* The band's content is rendered twice, so moving by half its width loops seamlessly. */
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+/* Small uppercase label used for eyebrows, captions and buttons. */
+@utility text-label {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+/* Outlined display text for alternating words in the scrolling bands. */
+@utility text-outline {
+  color: transparent;
+  -webkit-text-stroke: 1px var(--fg);
+}
+
+/* Fades the left and right edges of a scrolling band. */
+@utility mask-fade-x {
+  mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent) var(--bg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background: var(--bg);
+  color: var(--muted);
+  font-family: var(--font-sans);
+  overflow-x: clip;
+  transition:
+    background-color 0.4s ease,
+    color 0.4s ease;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 3px;
+}

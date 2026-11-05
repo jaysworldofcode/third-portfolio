@@ -1,0 +1,451 @@
+{
+  "meta": {
+    "title": "Lorem Agency — Digital & Creative Studio",
+    "description": "Lorem Agency is a digital and creative studio building brands, websites and campaigns for ambitious teams, from the first workshop to launch day and beyond.",
+    "favicon": "/images/favicon.svg",
+    "siteUrl": "https://lorem-agency.vercel.app/",
+    "siteName": "Lorem Agency",
+    "ogImage": "/images/og.jpg"
+  },
+  "owner": {
+    "name": "Lorem Agency",
+    "initials": "LA",
+    "logo": "/images/logo.svg"
+  },
+  "theme": {
+    "defaultMode": "dark",
+    "showToggle": true,
+    "accentColor": "#C6F432",
+    "accentTextColor": "#0A0A0A",
+    "switchToLightLabel": "Switch to light theme",
+    "switchToDarkLabel": "Switch to dark theme"
+  },
+  "sections": {
+    "home": true,
+    "clients": true,
+    "about": true,
+    "services": true,
+    "process": true,
+    "work": true,
+    "team": true,
+    "testimonials": true,
+    "pricing": true,
+    "blog": true,
+    "contact": true
+  },
+  "navigation": {
+    "labels": {
+      "home": "Home",
+      "clients": "Clients",
+      "about": "About",
+      "services": "Services",
+      "process": "Process",
+      "work": "Work",
+      "team": "Team",
+      "testimonials": "Reviews",
+      "pricing": "Pricing",
+      "blog": "Insights",
+      "contact": "Contact"
+    },
+    "menuItems": ["about", "services", "work", "team", "pricing", "blog", "contact"],
+    "ctaButton": { "label": "Start a Project", "href": "#contact" },
+    "openMenuLabel": "Open menu",
+    "closeMenuLabel": "Close menu"
+  },
+  "socialLinks": [
+    { "label": "Instagram", "href": "#", "icon": "instagram" },
+    { "label": "Dribbble", "href": "#", "icon": "dribbble" },
+    { "label": "Behance", "href": "#", "icon": "behance" },
+    { "label": "LinkedIn", "href": "#", "icon": "linkedin" },
+    { "label": "X", "href": "#", "icon": "x" }
+  ],
+  "hero": {
+    "variant": "scrollVideo",
+    "eyebrow": "Lorem Agency · Digital & Creative Studio",
+    "title": "We build brands",
+    "titleHighlight": "people remember.",
+    "summary": "Strategy, design and code under one roof. We help ambitious teams launch brands, websites and campaigns that look sharp and work even harder.",
+    "primaryButton": { "label": "See Our Work", "href": "#work" },
+    "secondaryButton": { "label": "Start a Project", "href": "#contact" },
+    "scrollHintLabel": "Scroll",
+    "marquee": ["Brand Strategy", "Web Design", "Motion", "Development", "Campaigns", "Product Design"],
+    "highlights": ["Independent studio since 2014", "180+ launches worldwide", "Remote-first, always on time"],
+    "showreel": {
+      "label": "Play Showreel",
+      "closeLabel": "Close showreel",
+      "video": "https://www.youtube.com/watch?v=-a_pN2QvJHI",
+      "poster": "/images/scroll-video-poster.jpg"
+    },
+    "media": {
+      "type": "image",
+      "src": "/images/scroll-video.mp4",
+      "poster": "",
+      "alt": "A designer working at a large screen in a dark studio"
+    },
+    "scrollVideo": {
+      "video": "/images/scroll-video.mp4",
+      "poster": "/images/scroll-video-poster.jpg",
+      "index": "00",
+      "label": "Begin",
+      "chapters": [
+        {
+          "label": "Concept",
+          "title": "It starts with a single word.",
+          "description": "Before anything moves on screen, we find the idea, the name and the message your audience should remember.",
+          "caption": "Step 01 · Concept"
+        },
+        {
+          "label": "Colour",
+          "title": "Then we find its colour.",
+          "description": "We test palettes against your market and your audience until the colour feels right, not just looks right.",
+          "caption": "Step 02 · Colour"
+        },
+        {
+          "label": "Type",
+          "title": "Letterforms with character.",
+          "description": "Custom type treatments give your brand a voice people recognise before they read a word.",
+          "caption": "Step 03 · Type"
+        },
+        {
+          "label": "Refine",
+          "title": "Again and again, until it clicks.",
+          "description": "Every detail is tweaked, compared and polished, so the final version is the one everyone signs off on.",
+          "caption": "Step 04 · Refine"
+        },
+        {
+          "label": "Launch",
+          "title": "Ready to stand out.",
+          "description": "From the first sketch to a live site, we ship work that holds up on every screen and surface.",
+          "caption": "Step 05 · Launch",
+          "button": { "label": "Start a Project", "href": "#contact" }
+        }
+      ]
+    }
+  },
+  "clients": {
+    "label": "Trusted by teams who refuse to blend in",
+    "logos": [
+      { "name": "Northvale", "image": "/images/clients/northvale.svg" },
+      { "name": "Orbitra", "image": "/images/clients/orbitra.svg" },
+      { "name": "Halden & Co", "image": "/images/clients/halden.svg" },
+      { "name": "Vireo", "image": "/images/clients/vireo.svg" },
+      { "name": "Parallax", "image": "/images/clients/parallax.svg" },
+      { "name": "Tessel", "image": "/images/clients/tessel.svg" },
+      { "name": "Brightpine", "image": "/images/clients/brightpine.svg" },
+      { "name": "Ondo", "image": "/images/clients/ondo.svg" }
+    ]
+  },
+  "about": {
+    "eyebrow": "About Us",
+    "title": "A small team with",
+    "titleHighlight": "big ambitions.",
+    "description": "Lorem Agency is an independent studio of strategists, designers and developers who care about the details most people never notice.",
+    "paragraphs": [
+      "We keep our team small on purpose. You work directly with the people doing the work, with no account managers in between and no handoffs lost in translation.",
+      "From early-stage startups to global brands, we bring the same curiosity, honesty and craft to every brief."
+    ],
+    "image": "/images/about-team.jpg",
+    "imageAlt": "Team members collaborating around a table covered in sketches and laptops",
+    "stats": [
+      { "value": 12, "suffix": "+", "label": "Years in business" },
+      { "value": 180, "suffix": "+", "label": "Projects launched" },
+      { "value": 24, "suffix": "", "label": "Industry awards" },
+      { "value": 98, "suffix": "%", "label": "Clients who return" }
+    ],
+    "timelineTitle": "Our story so far",
+    "timeline": [
+      { "year": "2014", "title": "Founded in a spare room", "description": "Two designers, one laptop each and a first client who still works with us today." },
+      { "year": "2017", "title": "Development joins design", "description": "We hired our first engineers and started shipping complete websites and apps." },
+      { "year": "2020", "title": "Remote-first studio", "description": "The team went fully remote and grew across four time zones." },
+      { "year": "2023", "title": "100th launch", "description": "Our hundredth project went live, a rebrand and platform for a fintech scale-up." },
+      { "year": "2026", "title": "Motion & campaigns", "description": "A dedicated motion team now brings our brands to life in video and social." }
+    ],
+    "awardsTitle": "Recognition",
+    "awards": [
+      { "title": "Studio of the Year", "issuer": "Lorem Design Awards", "year": "2025" },
+      { "title": "Best Brand Identity", "issuer": "Ipsum Creative Honours", "year": "2024" },
+      { "title": "Site of the Month", "issuer": "Dolor Web Showcase", "year": "2024" },
+      { "title": "Gold, Digital Campaign", "issuer": "Amet Marketing Prize", "year": "2023" }
+    ]
+  },
+  "services": {
+    "eyebrow": "Services",
+    "title": "Everything you need",
+    "titleHighlight": "to stand out.",
+    "description": "Pick one service or the full package. Either way, strategy, design and engineering stay connected from start to finish.",
+    "items": [
+      {
+        "title": "Brand Strategy",
+        "description": "Research, positioning and messaging that give your brand a clear point of view and a reason to be chosen.",
+        "tags": ["Research", "Positioning", "Naming", "Tone of voice"],
+        "image": "/images/service-strategy.jpg"
+      },
+      {
+        "title": "Visual Identity",
+        "description": "Logos, typography, colour and guidelines built as a flexible system rather than a single static mark.",
+        "tags": ["Logo design", "Type & colour", "Brand guidelines", "Packaging"],
+        "image": "/images/service-identity.jpg"
+      },
+      {
+        "title": "Web Design & Development",
+        "description": "Fast, accessible websites and web apps, designed in detail and engineered to grow with your business.",
+        "tags": ["UX & UI", "Next.js", "CMS", "E-commerce"],
+        "image": "/images/service-web.jpg"
+      },
+      {
+        "title": "Motion & Campaigns",
+        "description": "Animated brand assets, launch films and social campaigns that make people stop scrolling.",
+        "tags": ["Motion design", "Launch films", "Social content", "Art direction"],
+        "image": "/images/service-motion.jpg"
+      }
+    ]
+  },
+  "process": {
+    "eyebrow": "Process",
+    "title": "Four steps,",
+    "titleHighlight": "zero guesswork.",
+    "description": "A simple, transparent way of working keeps every project on time, on budget and true to the original idea.",
+    "steps": [
+      { "title": "Discover", "description": "We learn your business, audience and goals through workshops and research." },
+      { "title": "Define", "description": "Strategy, scope and a clear roadmap, agreed before any pixels are pushed." },
+      { "title": "Design & Build", "description": "Short sprints with weekly demos, so you see progress and steer as we go." },
+      { "title": "Launch & Grow", "description": "We launch, measure and keep improving with you after go-live." }
+    ]
+  },
+  "work": {
+    "eyebrow": "Selected Work",
+    "title": "Projects we're",
+    "titleHighlight": "proud of.",
+    "description": "A few recent launches across branding, web and motion.",
+    "previousLabel": "Previous project",
+    "nextLabel": "Next project",
+    "projects": [
+      {
+        "title": "Aurora Banking",
+        "client": "Aurora",
+        "category": "Brand & Platform",
+        "year": "2026",
+        "description": "A complete rebrand and web platform for a fast-growing digital bank.",
+        "image": "/images/work-aurora.jpg",
+        "href": "#"
+      },
+      {
+        "title": "Fieldnote Coffee",
+        "client": "Fieldnote",
+        "category": "Identity & Packaging",
+        "year": "2025",
+        "description": "A warm, hand-drawn identity and packaging range for a specialty roaster.",
+        "image": "/images/work-fieldnote.jpg",
+        "href": "#"
+      },
+      {
+        "title": "Kinetic Studio",
+        "client": "Kinetic",
+        "category": "Website & Motion",
+        "year": "2025",
+        "description": "An animated portfolio site for an independent fitness studio chain.",
+        "image": "/images/work-kinetic.jpg",
+        "href": "#"
+      },
+      {
+        "title": "Halcyon Travel",
+        "client": "Halcyon",
+        "category": "Campaign",
+        "year": "2024",
+        "description": "A launch campaign across film, social and outdoor for a boutique travel brand.",
+        "image": "/images/work-halcyon.jpg",
+        "href": "#"
+      }
+    ]
+  },
+  "team": {
+    "eyebrow": "Team",
+    "title": "The people",
+    "titleHighlight": "behind the work.",
+    "description": "A tight-knit crew of specialists. You'll meet every one of us on your project.",
+    "members": [
+      {
+        "name": "Maya Lorenz",
+        "role": "Founder & Creative Director",
+        "image": "/images/team-1.jpg",
+        "socials": [
+          { "label": "LinkedIn", "href": "#", "icon": "linkedin" },
+          { "label": "Dribbble", "href": "#", "icon": "dribbble" }
+        ]
+      },
+      {
+        "name": "Daniel Okafor",
+        "role": "Head of Strategy",
+        "image": "/images/team-2.jpg",
+        "socials": [
+          { "label": "LinkedIn", "href": "#", "icon": "linkedin" },
+          { "label": "X", "href": "#", "icon": "x" }
+        ]
+      },
+      {
+        "name": "Sofia Reyes",
+        "role": "Lead Designer",
+        "image": "/images/team-3.jpg",
+        "socials": [
+          { "label": "Behance", "href": "#", "icon": "behance" },
+          { "label": "Instagram", "href": "#", "icon": "instagram" }
+        ]
+      },
+      {
+        "name": "Kenji Watanabe",
+        "role": "Technical Director",
+        "image": "/images/team-4.jpg",
+        "socials": [
+          { "label": "GitHub", "href": "#", "icon": "github" },
+          { "label": "LinkedIn", "href": "#", "icon": "linkedin" }
+        ]
+      }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Testimonials",
+    "title": "Kind words from",
+    "titleHighlight": "kind people.",
+    "description": "Don't take our word for it. Here's what our clients say.",
+    "previousLabel": "Previous testimonial",
+    "nextLabel": "Next testimonial",
+    "items": [
+      {
+        "quote": "Lorem Agency understood our business faster than we did. The new brand doubled our inbound leads within three months.",
+        "name": "Hannah Brooks",
+        "role": "CMO",
+        "company": "Aurora",
+        "avatar": "/images/avatar-1.jpg"
+      },
+      {
+        "quote": "Honest, quick and ridiculously talented. They shipped a site we were proud of on the exact date they promised.",
+        "name": "Marcus Lee",
+        "role": "Founder",
+        "company": "Kinetic",
+        "avatar": "/images/avatar-2.jpg"
+      },
+      {
+        "quote": "Working with them felt like adding a senior creative team overnight. Our packaging now sells itself on the shelf.",
+        "name": "Priya Nair",
+        "role": "Head of Brand",
+        "company": "Fieldnote",
+        "avatar": "/images/avatar-3.jpg"
+      }
+    ]
+  },
+  "pricing": {
+    "eyebrow": "Pricing",
+    "title": "Simple plans,",
+    "titleHighlight": "no surprises.",
+    "description": "Fixed prices for the most common projects. Need something different? We'll put together a custom quote.",
+    "note": "All prices in USD, excluding tax. Payment split across project milestones.",
+    "plans": [
+      {
+        "name": "Starter",
+        "price": "$4,900",
+        "period": "per project",
+        "description": "For new businesses that need a strong first impression.",
+        "features": ["Logo & core identity", "One-page website", "Basic brand guidelines", "2 rounds of revisions"],
+        "button": { "label": "Choose Starter", "href": "#contact" },
+        "featured": false,
+        "badge": ""
+      },
+      {
+        "name": "Growth",
+        "price": "$12,500",
+        "period": "per project",
+        "description": "For growing teams ready for a complete brand and website.",
+        "features": [
+          "Brand strategy workshop",
+          "Full visual identity system",
+          "Multi-page website with CMS",
+          "Launch social kit",
+          "Unlimited revisions"
+        ],
+        "button": { "label": "Choose Growth", "href": "#contact" },
+        "featured": true,
+        "badge": "Most popular"
+      },
+      {
+        "name": "Partner",
+        "price": "$6,000",
+        "period": "per month",
+        "description": "An embedded creative team for ongoing design and development.",
+        "features": ["Dedicated design & dev team", "Weekly planning calls", "Campaigns and motion", "Priority support"],
+        "button": { "label": "Book a Call", "href": "#contact" },
+        "featured": false,
+        "badge": ""
+      }
+    ]
+  },
+  "blog": {
+    "eyebrow": "Insights",
+    "title": "Notes from",
+    "titleHighlight": "the studio.",
+    "description": "Ideas on branding, design, development and building things people love.",
+    "postsOnHomePage": 3,
+    "dateLocale": "en-US",
+    "readTimeLabel": "min read",
+    "viewAllLabel": "View all articles",
+    "backToBlogLabel": "All articles",
+    "emptyMessage": "No articles yet. Check back soon."
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Have a project",
+    "titleHighlight": "in mind?",
+    "description": "Tell us a little about your goals and timeline. We reply to every message within one business day.",
+    "band": ["Let's talk", "Start a project", "Say hello"],
+    "methods": [
+      {
+        "label": "Email",
+        "value": "hello@loremagency.com",
+        "href": "mailto:hello@loremagency.com",
+        "icon": "email"
+      },
+      { "label": "Phone", "value": "+1 (555) 014-2290", "href": "tel:+15550142290", "icon": "phone" },
+      { "label": "Studio", "value": "Remote-first · Worldwide", "href": "", "icon": "location" }
+    ],
+    "form": {
+      "nameField": { "label": "Name", "placeholder": "Jane Doe" },
+      "emailField": { "label": "Email", "placeholder": "jane@company.com" },
+      "subjectField": { "label": "Project type", "placeholder": "Branding, website, campaign..." },
+      "messageField": { "label": "Message", "placeholder": "Tell us about your goals, timeline and budget..." },
+      "submitLabel": "Send Message",
+      "sendingLabel": "Sending...",
+      "successMessage": "Thanks! Your message is on its way and we'll be in touch within one business day.",
+      "errorMessage": "Please fill in your name, a valid email and a message.",
+      "failureMessage": "Sorry, your message could not be sent. Please try again or email us directly.",
+      "rateLimitMessage": "Too many messages in a short time. Please try again in a few minutes."
+    },
+    "notifications": {
+      "provider": "smtp",
+      "sendTo": "hello@loremagency.com",
+      "senderName": "Lorem Agency website",
+      "subjectPrefix": "[Lorem Agency]"
+    }
+  },
+  "footer": {
+    "description": "An independent digital and creative studio building brands, websites and campaigns for ambitious teams.",
+    "exploreTitle": "Explore",
+    "contactTitle": "Contact",
+    "studioTitle": "Services",
+    "studioItems": ["Brand Strategy", "Visual Identity", "Web Design & Development", "Motion & Campaigns"],
+    "rightsText": "All rights reserved.",
+    "tagline": "Strategy · Design · Code",
+    "backToTopLabel": "Back to top",
+    "newsletter": {
+      "enabled": true,
+      "title": "Get studio notes in your inbox",
+      "description": "One short email a month with our latest work and ideas. No spam, unsubscribe anytime.",
+      "emailField": { "label": "Email address", "placeholder": "you@company.com" },
+      "submitLabel": "Subscribe",
+      "sendingLabel": "Subscribing...",
+      "successMessage": "You're in! Look out for our next issue.",
+      "errorMessage": "Please enter a valid email address.",
+      "failureMessage": "Sorry, we couldn't sign you up. Please try again later.",
+      "rateLimitMessage": "Too many attempts. Please try again in a few minutes.",
+      "subjectPrefix": "[Lorem Agency Newsletter]"
+    }
+  }
+}
