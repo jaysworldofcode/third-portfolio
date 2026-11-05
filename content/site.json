@@ -60,7 +60,7 @@
     { "label": "X", "href": "#", "icon": "x" }
   ],
   "hero": {
-    "variant": "scrollVideo",
+    "variant": "marquee",
     "eyebrow": "Lorem Agency · Digital & Creative Studio",
     "title": "We build brands",
     "titleHighlight": "people remember.",
